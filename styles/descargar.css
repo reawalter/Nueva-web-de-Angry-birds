@@ -1,0 +1,46 @@
+body{
+    background-image: url(../assets/imagenes/portadaJuegos.png);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+    color: whitesmoke;
+}
+
+/* Seccion 1 --------------------------------------------------------------------------------------------------------------------- */
+/* Header */
+.header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+h1{
+    margin: 22px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 37px;
+}
+
+/* Parrafo 1 */
+p{
+    margin: 16px 3vw 16px 3vw;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Anek Latin', sans-serif;
+}
+p a{
+    text-decoration: none;
+    color: #cf0404;
+    
+}
+
+.imagen{
+    background-repeat: no-repeat;
+}
