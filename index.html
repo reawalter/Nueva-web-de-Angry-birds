@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rovio - Angry birds</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- Fuentes de Google: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,84 +20,112 @@
 </head>
 
 <body>
-    <!-- Seccion 1 -->
-    <div class="seccion1-portada">
-        <div class="seccion1-barradenavegacion">
-            <h1 id="titulo">Angry Birds <img src="assets/imagenes/pajaro.png" id="pajaritotitulo"></h1>
+    <!-- Indice del codigo:
+     Seccion 1: Inicio y header.
+     Seccion 2: Seccion de informacion sobre la nueva version.
+     Seccion 3: Seccion de imagenes de personajes de la nueva version.
+     Seccion 4: Seccion de footer. 
+    -->
 
-            <ul class="seccion1-ul">
-                <li><a href="pages/contactanos.html">Contáctanos</a></li>
-                <li><a href="pages/SobreNosotros.html">Sobre Nosotros</a></li>
-                <li><a href="pages/descargar.html">Descargar</a></li>
-            </ul>
-        </div>
-        <div>
-            <button onclick="window.open('https://www.youtube.com/embed/wd1xG_gGoAg', '_blank')">Ver Trailer</button>
+    <!-- ------------------------------------------ 
+    Seccion 1: Inicio y header
+    ------------------------------------------ -->
+    <div class="seccion1">
+        <header class="seccion1__header">
+            <h1 class="seccion1__h1">Angry Birds</h1>
+
+            <nav class="seccion1__nav">
+                <li class="seccion1__li"><a class="seccion1__link" href="pages/contactanos.html">Contáctanos</a></li>
+                <li class="seccion1__li"><a class="seccion1__link" href="pages/SobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="seccion1__li"><a class="seccion1__link" href="pages/descargar.html">Descargar</a></li>
+            </nav>
+        </header>
+
+        <div class="seccion1__header seccion1__header--mas5-margin-bottom">
+            <button class="seccion1-2__button">Descargar</button>
         </div>
     </div>
 
-    <!-- Seccion 2 -->
-    <div class="seccion2-divpadre">
-        <h2 class="seccion2-subtitulo">Angry Birds 1.21</h2>
 
-        <p class="seccion2-descripcion">¡La guerra entre pájaros y cerdos ha llegado a nuevas alturas! En esta versión
-            especial, los Angry Birds deben enfrentarse al clima extremo de la Isla del Hielo para recuperar los huevos
-            robados. Nuevos niveles congelados, trampas heladas y enemigos mejorados harán que cada lanzamiento cuente.
-        </p>
-
-        <button class="seccion2-descargar" onclick="window.location.href='pages/descargar.html'">Descargar</button>
+    <!-- Este div con clase seccion2,3,4 es el contenedor que envuelve las secciones 2 y 3 -->
+    <div class="seccion-dos-tres-cuatro">
 
 
-        <h2 class="seccion2-subtitulo" id="nuevospersonajes">Nuevos Personajes!</h2>
+        <!-- ------------------------------------------
+         Seccion 2: Seccion de informacion sobre la nueva version.
+         ------------------------------------------ -->
+        <div class="seccion-2-3-4">
+            <h2 class="seccion2__h2">Angry Birds: La nueva versión</h2>
 
-        <!-- Seccion de las imagenes de las cartas de los nuevos pajaros -->
-        <div class="seccion1-contenedor">
-            <div class="seccion1-pajaros">
-                <img src="assets/imagenes/verde.png" alt="verde" width="100px" height="100px" class="seccion2-imagenes">
-                <h4 class="seccion2-nombredepajaro">Hal</h4>
-            </div>
-
-            <div class="seccion1-pajaros">
-                <img src="assets/imagenes/anaranjado.png" alt="anarajado" width="100px" height="100px"
-                    class="seccion2-imagenes">
-                <h4 class="seccion2-nombredepajaro">Bubbles</h4>
-            </div>
-
-            <div class="seccion1-pajaros">
-                <img src="assets/imagenes/cerdo.png" alt="rojo" width="100px" height="100px" class="seccion2-imagenes">
-                <h4 class="seccion2-nombredepajaro">Rey Pig</h4>
-            </div>
-        </div><br>
-
-        <!-- Seccion 3 ----------------------------------------------------------------------------------------------------------- -->
-        <div class="seccion3-ultimasNoticias">
-            <h4 id="seccion3-subtituloUno">Ultimas Noticias</h4>
-
-            <p>
-                • 🎉 Nuevo evento: Batalla en la jungla – del 5 al 12 de junio. <br>
-                • 💥 Explosiones mejoradas en la versión 1.21. <br>
-                • 🐷 Los cerdos han desarrollado nuevas defensas... ¿podrás vencerlos?
+            <p class="seccion2__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, culpa saepe
+                perferendis perspiciatis
+                praesentium ex fugit. Sequi hic similique delectus excepturi enim. Quasi molestias quisquam culpa nemo
+                non exercitationem quis?
             </p>
-        </div>
 
-        <!-- Seccion 4 ------------------------------------------------------------------------------------------------- -->
-        <div class="seccion4-primerdiv">
-            <p>© 2025 Angry Birds. Todos los derechos reservados.</p>
-
-            <ul class="seccion4-ul">
-                <li><a href="https://instagram.com" class="seccion4-links"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://youtube.com" class="seccion4-links"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://x.com" class="seccion4-links"><i class="fab fa-x-twitter"></i></a></li>
-            </ul>
+            <button class="seccion1-2__button seccion1-2__button--masMargen">Descargar</button>
         </div>
 
 
+        <!-- ------------------------------------------
+         Seccion 3: Seccion de imagenes de personajes de la nueva version
+         ------------------------------------------ -->
+        <div class="seccion-2-3-4">
+            <h2 class="seccion3__h2">Nuevos Personajes🐦</h2>
+
+            <div class="seccion3__contenedorPajaros">
+
+                <div class="seccion3__pajaro">
+                    <div class="seccion3__divImg">
+                        <img class="seccion3__img" src="assets/imagenes/verde.png" alt="">
+                    </div>
+                    <div class="seccion3__divNombre">
+                        <h3 class="seccion3__h3">Hall</h3>
+                    </div>
+                </div>
+
+                <div class="seccion3__pajaro">
+                    <div class="seccion3__divImg">
+                        <img class="seccion3__img" src="assets/imagenes/anaranjado.png" alt="">
+                    </div>
+                    <div class="seccion3__divNombre">
+                        <h3 class="seccion3__h3">Bubbles</h3>
+                    </div>
+                </div>
+
+                <div class="seccion3__pajaro">
+                    <div class="seccion3__divImg">
+                        <img class="seccion3__img" src="assets/imagenes/cerdo.png" alt="">
+                    </div>
+                    <div class="seccion3__divNombre">
+                        <h3 class="seccion3__h3">Cerdo Rey</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------ 
+         Seccion 4: Seccion de footer
+         ------------------------------------------ -->
+        <div class="seccion4">
+            <p class="seccion4__parrafo">&copy; Todos los derechos reservados por Rovio.com</p>
+
+            <nav class="seccion4__nav">
+                <li class="seccion4__li"><a class="seccion4__link" href="https://instragram.com"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li class="seccion4__li"><a class="seccion4__link" href="https://x.com"><i
+                            class="fa-brands fa-x-twitter"></i>
+                    </a></li>
+                <li class="seccion4__li"><a class="seccion4__link" href="https://youtube.com"><i
+                            class="fa-brands fa-youtube"></i>
+                    </a></li>
+            </nav>
 
 
-
+        </div>
 
     </div>
-
 </body>
 
 </html>

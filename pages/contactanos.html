@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=h2, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="stylesheet" href="../styles/contactanos.css">
+    <link rel="stylesheet" href="../responsive/contactanos-resposive.css">
 
     <!-- Fuentes de Google: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,41 +20,56 @@
 </head>
 
 <body>
+    <!-- Indice del codigo:
+     Seccion 1: Titulo, subtitulo y descripción.
+     Seccion 2: Solo el formulario -->
 
-    <!-- Seccion 1 ------------------------------------------------------------------------------- -->
-    <!-- Encabezado (head) -->
-    <div style="display: flex; justify-content: start; align-items: center; margin-left: 2vw;">
-        <span class="material-symbols-outlined" style="margin-right: 5px; color: #cc0000;">arrow_back</span>
-        <h1 style="margin-left: 10px;">Contáctanos</h1>
+     <!-- Imagen de fondo -->
+    <div class="fondo"></div>
+
+
+    <!-- ----------------------------------------------------------
+   Seccion 1 
+  ------------------------------------------------------------->
+    <header class="seccion1__header">
+        <h1 class="seccion1__title">Contáctanos</h1>
+    </header>
+
+
+    <div class="seccion1__divh2">
+        <h2 class="seccion1__h2">Somos Rovio, la empresa detras de Angry Birds</h2>
     </div>
 
-    <!-- Parrafo de Somos robio... -->
-    <p class="seccion1-parrafo1">Somos Rovio, la empresa detras de Angry birds</p><br>
+    <div class="seccion1__descripcion">
+        <p class="seccion1__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quis sint quia
+            ratione, voluptas
+            veritatis officia eius iusto blanditiis. Officia alias ipsam sint repellat! Aut beatae odit quam cupiditate
+            cum.</p>
+    </div>
 
-    <p class="seccion1-parrafo2">Al contactar a nuestro equipo, estás estableciendo comunicación directa con el equipo
-        oficial de soporte de Angry
-        Birds. Nos comprometemos a brindarte asistencia oportuna y clara, ya sea que tengas dudas sobre el juego,
-        inconvenientes técnicos o comentarios generales.
-        Nuestro objetivo es ofrecerte una experiencia de usuario de calidad. Cada mensaje que recibimos es atendido con
-        atención y profesionalismo por personal capacitado. Agradecemos tu interés y estamos aquí para ayudarte en lo
-        que necesites.</p><br>
 
-    <!-- Formulario -->
-    <div class="Formulario">
+    <!-- ----------------------------------------------------------
+   Seccion 2 
+  ----------------------------------------------------------- -->
+    <div class="seccion2">
         <form action="">
-            <label for="nomrbe">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email"><br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="mensaje">Mesaje:</label><br>
-            <textarea name="mensaje" id="mensaje"></textarea><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <input type="submit" id="enviar" value="Enviar">
-
+            <button type="submit">Enviar</button>
         </form>
     </div>
+
+
+
+
+
 </body>
 
 </html>

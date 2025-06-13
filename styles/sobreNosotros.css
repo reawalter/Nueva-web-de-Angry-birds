@@ -1,24 +1,39 @@
+/*  Indice del codigo:
+    Seccion 1: Titulo, Descripcion */
+
+
 body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.fondo{
     background-image: url(../assets/imagenes/portadaSobreNosotros.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: fixed;
+    position: top;
+    position: left;
 
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    color: white;
+    z-index: -1;
 }
 
-/* Seccion 1 */
-.header{
+/*----------------------------------------------------------
+   Seccion 1 
+  -----------------------------------------------------------*/
+.seccion1__header{
     display: flex;
     justify-content: start;
     align-items: center;
     padding-left: 3vw;
 }
 
-h1{
+.seccion1__h1{
     margin: 22px;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
@@ -27,12 +42,12 @@ h1{
     font-size: 37px;
 }
 
-.Parrafo {
+.seccion1__divParrafo {
     display: flex;
     justify-content: center;
 }
 
-p {
+.seccion1__p{
     margin-left: 20px;
     margin-right: 20px;
     overflow: scroll;
@@ -42,7 +57,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-size: 19px;
+    font-size: 15px;
     line-height:30px;
 
     background-color: rgba(0, 0, 0, 0.206);
@@ -67,3 +82,33 @@ p::-webkit-scrollbar-button{
     background-color: transparent;
 }
 
+
+
+/* Media Queryes para:
+Telefonos, menor 480px: ✅,
+Tablets pequeñas 481px - 768px: ✅,
+tablets grandes/ laptos pequeñas 769px - 1024px: ✅,
+laptops grandes / Escritorio, mayor 1025px: ✅ 
+*/
+
+@media  (min-width: 481px) and (max-width: 768px) {
+    .seccion1__h1{
+        font-size: 30px;
+    }
+
+    .seccion1__p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion1__h1{
+        font-size: 25px;
+    }
+
+    .seccion1__p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
